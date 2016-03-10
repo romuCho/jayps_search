@@ -251,6 +251,7 @@ class Orm_Behaviour_Searchable extends \Nos\Orm_Behaviour
                             // this could end to "no results"
                             // increase 'max_join' in your config in you really need to do that
                             'max_keywords' => static::$_jaypssearch_config['max_join'] - count($used_keywords),
+                            'allowable_chars' => static::$_jaypssearch_config['allowable_chars'],
                         ), $nb_keywords);
                         //self::d($keywords_fields);
                         if ($nb_keywords > 0) {
