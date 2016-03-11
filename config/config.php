@@ -17,6 +17,9 @@ return array(
         // 5 lettres
         'titre',
     ),
+    
+    /** @brief allowed some chars in words indexed and in search  */
+    'allowable_chars' => '*?',
 
     /** @brief longueur mimimum des mots à indexer */
     'min_word_len' => 3,
